@@ -21,10 +21,10 @@ h1 {
 }
 
 .image-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px; /* Vertical gap between grid items */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 100px; /* Vertical gap between images */
     margin-top: 20px;
 }
 
@@ -36,10 +36,8 @@ h1 {
 }
 
 img {
-    max-width: calc(100% - 40px); /* Adjusted max-width to account for margin */
+    max-width: 100%;
     height: auto;
-    margin-bottom: 20px; /* Add vertical margin to create a gap between images */
-    margin-right: 20px; /* Add horizontal margin between images */
 }
 
 .caption {
