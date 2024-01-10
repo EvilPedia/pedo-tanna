@@ -36,7 +36,7 @@ h1 {
 }
 
 img {
-    max-width: 100%;
+    max-width: calc(100% - 40px); /* Adjusted max-width to account for margin */
     height: auto;
     margin-bottom: 20px; /* Add vertical margin to create a gap between images */
     margin-right: 20px; /* Add horizontal margin between images */
