@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #36393f;
+    background-color: #36393f; /* Set the background color of the entire page */
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -21,18 +21,18 @@ h1 {
 }
 
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Divide into equal columns */
+    gap: 10px; /* Add a gap between grid items */
     justify-content: space-around;
     margin-top: 20px;
 }
 
 .img-wrapper {
-    margin: 10px;
     border: 2px solid #7289da;
     border-radius: 8px;
     overflow: hidden;
-    position: relative; /* Ensure the border displays correctly */
+    position: relative;
 }
 
 img {
@@ -46,7 +46,7 @@ img {
     background-color: #2f3136;
     color: #ffffff;
     font-size: 14px;
-    position: absolute; /* Position captions at the bottom */
+    position: absolute;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
